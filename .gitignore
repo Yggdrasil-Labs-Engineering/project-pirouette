@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Pirouette local database
+pirouette.db
+database/*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Build and packaging
+build/
+dist/
+*.spec
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
