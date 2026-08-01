@@ -1,358 +1,315 @@
-# 🩰 Project Pirouette
+# 🌳 Yggdrasil Labs Engineering
 
-> **Plan with Confidence. Schedule with Ease.**
+# 💃 Pirouette
 
-Project Pirouette is a desktop scheduling application designed to help dance academies organize teachers, studios, class availability, and weekly schedules while preventing scheduling conflicts.
+## Smart Scheduling for Dance Academies
 
-Although originally designed for dance studios, the scheduling engine is being developed in a way that can eventually support other businesses that require recurring weekly scheduling.
+> **Plan with confidence. Schedule with ease.**
 
----
-
-# Current Version
-
-**Version:** 0.4.0
-
-Status:
-
-✅ Active Development
+<img width="1402" height="1122" alt="ChatGPT Image Aug 1, 2026, 06_51_29 PM" src="https://github.com/user-attachments/assets/65ff91ed-9587-44ad-a4b6-ab5182d296b9" />
 
 ---
 
-# Features
+# Why Pirouette Exists
 
-## Teachers
+Dance academies manage an incredible number of moving parts.
 
-- Add teachers
-- Delete teachers
-- Persistent SQLite storage
-- Duplicate teacher validation
+Teachers.
 
----
+Students.
 
-## Weekly Availability
+Studios.
 
-Assign weekly availability for each instructor.
+Class schedules.
 
-Example:
+Availability.
 
-Monday
+Recitals.
 
-4:00 PM – 8:00 PM
+Competitions.
 
-Features:
+As a studio grows, scheduling quickly becomes one of its most time-consuming and frustrating responsibilities.
 
-- Multiple teachers
-- Day selection
-- Start/End times
-- Availability validation
-- Delete availability
-- SQLite persistence
+Pirouette was created to simplify that process.
+
+It helps studio owners organize teachers, classes, studios, and availability while automatically identifying scheduling conflicts before they become problems.
+
+Instead of spending hours adjusting spreadsheets, studio owners can focus on what matters most:
+
+Helping dancers grow.
 
 ---
 
-## Studios
+# Mission
 
-Manage available studios.
+Pirouette helps dance academies build organized, conflict-free schedules through intuitive scheduling tools and intelligent validation.
 
-Features:
+Every schedule should be:
 
-- Add studios
-- Delete studios
-- Duplicate prevention
-
-Examples:
-
-- Studio A
-- Studio B
-- Studio C
+- Organized
+- Accurate
+- Flexible
+- Easy to Understand
+- Easy to Maintain
 
 ---
 
-## Classes
+# Core Responsibilities
 
-Manage classes offered by the academy.
+Pirouette is responsible for:
 
-Each class stores:
-
-- Class Name
-- Dance Style
-- Preferred Teacher
-- Duration
-
-Supported dance styles include:
-
-- Ballet
-- Tap
-- Jazz
-- Hip Hop
-- Contemporary
-- Acro
-- Lyrical
-- Musical Theatre
-- Pointe
-- Conditioning
+- Teacher Management
+- Class Scheduling
+- Studio Management
+- Availability Tracking
+- Conflict Detection
+- Weekly Calendar Generation
+- Schedule Validation
+- Excel Export
 
 ---
 
-## Scheduling Engine
+# Scheduling Pipeline
 
-Schedule classes onto a weekly calendar.
+```text
+Teachers
+      │
+      ▼
+Classes
+      │
+      ▼
+Studios
+      │
+      ▼
+Availability
+      │
+      ▼
+Conflict Detection
+      │
+      ▼
+Weekly Schedule
+      │
+      ▼
+Professional Export
+```
 
-Each scheduled class includes:
-
-- Teacher
-- Studio
-- Day
-- Start Time
-- End Time
-
----
-
-## Conflict Detection
-
-Pirouette validates schedules before saving.
-
-Checks include:
-
-### Teacher Availability
-
-Example:
-
-Teacher Lynn is unavailable Monday from 4:00 PM–5:00 PM.
-
----
-
-### Teacher Double Booking
-
-Teachers cannot be assigned to two classes simultaneously.
+Good schedules create great experiences.
 
 ---
 
-### Studio Double Booking
+# Platform Philosophy
 
-Studios cannot host more than one class at the same time.
+Great scheduling should feel effortless.
 
----
+Studio owners should spend their time supporting instructors and students—not fighting spreadsheets.
 
-### Multi-Issue Reporting
-
-Pirouette reports all detected scheduling problems rather than stopping after the first error.
-
-Example:
-
-Unable to schedule Tiny Tots.
-
-Problems found:
-
-• Teacher unavailable
-
-• Studio conflict
+Pirouette brings structure, visibility, and confidence to every schedule.
 
 ---
 
-# Weekly Calendar
+# Current Features
 
-Interactive weekly calendar.
+### Teacher Management
 
-Features:
-
-- Monday–Saturday view
-- Color-coded dance styles
-- Weekly schedule visualization
-- Teacher filtering
-- Studio filtering
-- Hover highlighting
-- Double-click class details
-- Delete scheduled classes
-- Responsive calendar layout
+- Teacher Profiles
+- Availability Tracking
+- Instructor Assignments
 
 ---
 
-# Pop-Out Weekly Schedule
+### Class Management
 
-Large presentation view.
-
-Features:
-
-- Dedicated weekly schedule window
-- Monday–Saturday layout
-- Full-screen support
-- Click to select classes
-- Double-click for details
-- Delete scheduled classes
+- Class Creation
+- Teacher Assignment
+- Studio Assignment
+- Day and Time Scheduling
 
 ---
 
-# Branding
+### Studio Management
 
-Pirouette includes a consistent desktop application identity.
-
-Features:
-
-- Custom logo
-- Product branding
-- About dialog
-- Version information
-- Unified color palette
+- Multiple Studios
+- Capacity Tracking
+- Resource Organization
 
 ---
 
-# Data Storage
+### Scheduling
 
-Database:
-
-SQLite
-
-Tables include:
-
-- Teachers
-- Studios
-- Availability
-- Classes
-- Schedule
+- Weekly Calendar View
+- Interactive Schedule
+- Conflict Detection
+- Validation Rules
 
 ---
 
-# Technology
+### Export
 
-Language
-
-- Python
-
-GUI
-
-- Tkinter
-- ttk
-
-Database
-
-- SQLite
-
-Architecture
-
-- Modular desktop application
-- Business-rule validation
-- Responsive calendar rendering
+- Excel Schedule Export
+- Printable Weekly Schedule
 
 ---
 
-# Screenshots
+# Current Development Status
 
-## Weekly Calendar
+## Current Phase
 
-*(Insert screenshot here)*
+🟢 MVP Development
 
----
+### Completed
 
-## Full Weekly Schedule
+- ✅ Teacher Management
+- ✅ Class Management
+- ✅ Studio Management
+- ✅ Availability Tracking
+- ✅ Weekly Calendar
+- ✅ Conflict Detection
+- ✅ Excel Export
 
-*(Insert screenshot here)*
+### In Progress
 
----
-
-## Teacher Management
-
-*(Insert screenshot here)*
-
----
-
-# Planned Features
-
-## Excel Export
-
-Generate:
-
-- Weekly schedule
-- Teacher schedules
-- Studio schedules
-- Printable reports
-
----
-
-## Drag and Drop Scheduling
-
-Move classes by dragging them on the calendar.
-
-Automatic validation:
-
-- Teacher availability
-- Studio availability
-- Scheduling conflicts
-
----
-
-## Printing
-
-Print-friendly schedules.
-
----
-
-## Statistics
-
-Examples:
-
-- Teacher hours
-- Studio utilization
-- Classes per day
-- Weekly totals
-
----
-
-## Packaging
-
-- Windows installer
-- Standalone executable
-
----
-
-# Project Philosophy
-
-Project Pirouette is being developed as a practical software engineering portfolio project.
-
-The focus is not simply writing code, but building software that solves real problems through:
-
-- Clean user interface
-- Strong validation
-- Clear business rules
-- Ease of use
-- Professional desktop experience
+- ⬜ UI Improvements
+- ⬜ Reporting
+- ⬜ Schedule Optimization
+- ⬜ Desktop Packaging
 
 ---
 
 # Roadmap
 
-Current Version
+## Phase 1
 
-✅ Teacher Management
-
-✅ Studio Management
-
-✅ Class Management
-
-✅ Weekly Availability
-
-✅ Scheduling Engine
-
-✅ Conflict Detection
-
-✅ Weekly Calendar
-
-✅ Pop-Out Schedule
-
-✅ Branding
-
-🔄 Excel Export
-
-🔄 Drag-and-Drop Scheduling
-
-🔄 Printing
-
-🔄 Installer
+✔ Scheduling Foundation
 
 ---
 
-# Author
+## Phase 2
 
-Lawrence Luna
+- Student Management
+- Recital Planning
+- Instructor Reports
+- Schedule Templates
 
-Project Pirouette is part of a growing portfolio of desktop software projects focused on practical business automation and user-centered design.
+---
+
+## Phase 3
+
+- Intelligent Scheduling Suggestions
+- Attendance Tracking
+- Mobile Companion
+- Calendar Synchronization
+
+---
+
+## Phase 4
+
+- Multi-Location Studio Support
+- Business Analytics
+- Parent Portal
+- Cloud Synchronization
+
+---
+
+# Repository Structure
+
+```text
+project-pirouette/
+
+├── app/
+├── database/
+├── scheduling/
+├── exports/
+├── ui/
+├── docs/
+├── README.md
+├── LICENSE
+└── requirements.txt
+```
+
+---
+
+# Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Application Logic |
+| SQLite | Data Storage |
+| Tkinter | Desktop Interface |
+| OpenPyXL | Excel Export |
+| GitHub | Version Control |
+
+### Future Technologies
+
+- Wails
+- Go Backend
+- PostgreSQL
+- Cloud Synchronization
+- Mobile Integration
+
+---
+
+# How Pirouette Makes a Difference
+
+Pirouette helps studios:
+
+- Save Time
+- Reduce Scheduling Conflicts
+- Improve Organization
+- Simplify Weekly Planning
+- Support Studio Growth
+- Create Better Experiences for Teachers and Students
+
+Technology should simplify administration—not complicate it.
+
+---
+
+# Related Projects
+
+🌳 **Yggdrasil Foundation**  
+Engineering philosophy and organizational standards.
+
+🛡 **OVERWATCH**  
+Operational Intelligence Platform.
+
+📄 **Morphis**  
+Engineering Workflow Automation Platform.
+
+🛠 **BlackSmith** *(Planned)*  
+Infrastructure Automation Platform.
+
+🐍 **Jormungandr** *(Planned)*  
+Enterprise Security Platform.
+
+---
+
+# Engineering Philosophy
+
+Pirouette follows the engineering principles established by the **Yggdrasil Foundation**.
+
+We believe software should remove administrative burdens so people can focus on what they do best.
+
+In this case...
+
+Helping dancers learn, grow, and succeed.
+
+Our goal is simple:
+
+> **Plan with confidence. Schedule with ease.**
+
+---
+
+# Project Origin
+
+Pirouette began as a solution to a real scheduling challenge faced by a local dance academy.
+
+What started as a way to simplify weekly scheduling evolved into a broader vision:
+
+Build software that makes small organizations more efficient through thoughtful engineering.
+
+That philosophy continues to guide every feature added to Pirouette.
+
+---
+
+# License
+
+Released under the **MIT License**.
