@@ -6,7 +6,7 @@
 
 > **Plan with confidence. Schedule with ease.**
 
-<img width="1402" height="1122" alt="ChatGPT Image Aug 1, 2026, 06_51_29 PM" src="https://github.com/user-attachments/assets/65ff91ed-9587-44ad-a4b6-ab5182d296b9" />
+![Project Pirouette Banner](assets/pirouette-dance-banner.png)
 
 ---
 
